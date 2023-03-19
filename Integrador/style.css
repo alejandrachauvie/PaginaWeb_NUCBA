@@ -1,0 +1,748 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gorditas&family=Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gorditas:wght@700&family=Rum+Raisin&family=Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    color: white;
+    position: relative;
+    
+}
+:root{
+    --yeloow: rgb(247, 227, 7);
+    --black: rgb(10, 1, 1);
+    --green: rgb(53, 52, 52);
+    --white: rgb(255, 255, 255);
+    
+}
+
+
+.contenedor{
+   
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    max-height: 1600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+   
+    
+    
+}
+
+.menu-principal{
+    width: 100%;
+    max-width: 1400px;
+    height: 70px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background: rgba(0,0,0,0.75);
+    z-index: 50;
+}
+
+
+.logo img{
+    width: 60px;
+    height: 60px;
+    flex-grow: 1;
+    flex: 1;
+    border-radius: 50px;
+    margin-top: 5px;
+   
+}
+.navegador{
+    gap: 20px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+
+.hamburgesa{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.hamburgesa img{
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (max-width:560px) {
+    .menu{
+        display: none;
+    }
+   .hamburgesa{
+    display: block;
+   }
+   .menuh{
+    display: none;
+   }
+   .empleados {
+    display: none;
+   }
+   
+   .imagen .presentacion-empleados {
+    display: none;
+   }
+   .imagen{
+    width: 200px;
+   }
+   .contacto-empresa .contact .descripcion{
+     width: 100%;
+   }
+   .contacto-empresa .contact .img-empresa{
+    display: none;
+   }
+   .contacto-empresa .info-empresa .text{
+    font-size: 12px;
+   }
+
+   .footer .elemento-2 .texto-footer{
+    font-size: 12px;
+   }
+
+   .header1 .registro{
+    width: 90%;
+    height: 100%;
+   }
+
+
+
+  
+   
+ 
+}
+
+
+
+.menu li a:hover{
+    color: white;
+}
+
+
+
+
+
+.hamburgesa .menuhamb{
+    display: none;
+}
+
+input:checked ~ .menuh{
+    display: block;
+    position: absolute;
+}
+.menuh{
+    width: 100vw;
+    height: 95vh;
+    right: 20px;
+    background-color:var(--yeloow);
+    justify-content: center;
+    text-align: center;
+    align-items: center;   
+    display: flex;
+    flex-direction: column;
+    display: none;
+    
+}
+
+.menuh li{
+    margin-top: 40px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+   
+    
+}
+
+.menuh li a{
+    justify-content:center;
+    align-content: center;
+    align-items: center;
+    color: var(--green);
+    font-size: 16px;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+
+
+
+.header{
+    width: 100%;
+    height: 500px;
+    background: url(img/1f5d30e0130e6997037fb5671acdd976.jpg);
+    background-size: cover;
+  
+    
+}
+
+
+
+.proyectos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+   
+}
+.titulo{
+    color: var(--white);
+    font-size: 8em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    display: flex;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 0 0 15px rgba(0,0,0,0.9);
+
+
+
+}
+
+
+.botton-1{
+    
+    background-color: var(--yeloow);
+    color: rgb(12, 12, 12);
+    width: 160px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px #160d0d;
+    font-size: 16px;
+    font-family: 'Alfa Slab One', cursive;
+    
+}
+
+@media screen and (max-width:370px){
+     .botton-1{
+        width: 100px;
+        height: 40px;
+        font-size: 12px;
+     }
+     .texto-presentacion{
+        width:100%;
+       padding: 0;
+       text-align: center;
+       align-items: center;
+       
+     }
+     .footer .elemento-2{
+       width: 60%;
+     }
+
+     .footer .elemento-1 .siguenos{
+        display: none;
+     }
+     .header .titulo{
+        font-size: 5em;
+     }
+     .header1 .loguearse{
+        width: 90%;
+     }
+    .header1 .registro .formulario-crear .formulario .controls{
+        width: 95%;
+       
+    }
+    
+}
+
+.botton-1:hover{
+    background-color: #160d0d;
+    color: var(--yeloow);
+}
+/* seccion empleados  */
+
+.imagen{
+    width: 100%;
+    height: 400px;
+    background-color: var(--black);
+    border-top: 4px solid var(--yeloow);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+
+}
+.texto-presentacion{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 150px 0 150px;
+    align-items: center;
+    display: flex;
+    
+    
+
+}
+.texto-presentacion h2{
+    padding-bottom: 20px;
+    color: var(--yeloow);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+.marca{
+    font-size: 20px;
+    color: var(--yeloow);
+}
+
+.texto-presentacion p{
+    text-align: center;
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.presentacion-empleados{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    justify-content: center;
+   
+
+}
+
+.imagen1,
+.imagen2 ,
+.imagen3 ,
+.imagen4{
+    width: 250px;
+    height:230px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen1 img,
+.imagen2 img,
+.imagen3 img,
+.imagen4 img{
+    width: 95%;
+    height: 100%;
+    border-radius: 50%;
+}
+@media screen and (max-width:870px) {
+    .contacto-empresa .descripcion{
+        width: 50%;
+    }
+   .contacto-empresa .img-empresa{
+    width: 50%;
+   }
+    
+}
+@media screen and (max-width:750px){
+    .presentacion-empleados{
+        width: 90%;
+        height: 140px;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        gap: 5px;
+        font-size: 11px;
+    }
+
+    .imagen1,.imagen2,.imagen3,.imagen4{
+        width: 90%;
+        height: 160px;
+    }
+}
+
+
+@media screen and (max-width:680px) {
+  
+    .presentacion-empleados{
+        width: 80%;
+        height: 120px;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        gap: 10px;
+       
+        
+    }
+    .imagen1,.imagen2,.imagen3,.imagen4{
+        width: 180px;
+        height: 150px;
+    }
+ 
+    
+}
+
+
+
+/* seccion contacto */
+
+.contacto-empresa{
+    width: 100%;
+    height: 400px;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.contact{
+    width: 100%;
+    height: 300px;
+    display: flex;
+
+}
+.info-empresa{
+    width: 100%;
+    height: 100px;
+    background: url(img/degradado.jpg);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 2px solid var(--black);
+  
+    
+
+}
+
+
+.img-empresa
+{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-left: 50px;
+   
+}
+
+
+
+.descripcion{
+    width:70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: var(--green);
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 40px;
+    column-gap: 30px;
+    background-image: url(img/b2b-web-design-examples-min.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+	z-index: 1;
+    opacity: 65%;
+    
+}
+
+
+.Contact-Us{
+    font-size: 35px;
+    font-family: 'Trade Winds', cursive;
+    margin-bottom: 20px;
+    color: var(--yeloow);
+    
+}
+.descripcion p{
+    color: var(--white);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.msj{
+    width: 120px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background: var(--black);
+    color: var(--yeloow);
+
+
+    
+}
+
+.msj:hover{
+    color: var(--black);
+    background: var(--yeloow);
+}
+
+
+.img-empresa{
+    display: flex;
+    width: 30%;
+    height: 100%;
+    flex-direction: column;
+    color: var(--yeloow);
+    border: 1px solid var(--yeloow);
+
+
+}
+.img-empresa img{
+    width: 20px;
+    height: 20px;
+}
+
+.c-info,
+.whatssap,
+.ubicacion,
+.mail{
+    display: flex;
+    gap: 10px;
+    padding: 25px;
+    align-items: flex-end;
+
+}
+.text{
+    color: coral;
+    font-size: 25px;
+    font-family: 'Gorditas', cursive;
+
+
+}
+
+/*footer*/
+
+.footer{
+    width: 100%;
+    height: 300px;
+    background: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+.elemento-1{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.elemento-1 img{
+    width: 30px;
+    height: 30px;
+    border-radius: 60%;
+    display: flex;
+   
+}
+
+.elemento-2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+
+.texto-footer{
+    color: var(--yeloow);
+    font-family: 'Trade Winds', cursive;
+    padding: 10px;
+    font-size: 17px;
+    
+}
+.elemento-3{
+    width: 100%;
+    height: 70px;
+    font-size: 10px;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+/*pagina login*/
+
+.header1{
+    width: 100%;
+    height: 100vh;
+    background: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.loguearse{
+
+    width: 100%;
+    max-width: 300px;
+    height: 70%;
+    max-height: 500px;
+    background-color:var(--yeloow);
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+   
+}
+.img-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.img-login img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 100px;
+}
+
+.usu,
+.pass,
+.links{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 60px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.botonlog{
+    background: var(--black);
+    color: var(--yeloow);
+    width: 130px;
+    height: 40px;
+    border-radius: 8px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.botonlog:hover{
+    color: dimgrey;
+    border: 3px solid dimgrey;
+}
+
+.links{
+    gap: 10px;
+}
+
+.links a{
+    color: var(--green);
+}
+
+.links .crear-cuanta{
+    color: var(--white);
+}
+
+.crear-cuanta:hover{
+    color: deeppink;
+}
+/*pagina crear cuenta*/
+
+.registro{
+    display: flex;
+    width: 100%;
+    max-width:600px;
+    height: 100%;
+    max-height: 500px;
+    background-color: var(--yeloow);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.crear{
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
+    margin: 30px;
+    color: var(--black);
+   
+}
+.controls{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 18px;
+    font-family: 'Gulzar', serif;
+    border: 2px solid rgb(165, 121, 12);
+    
+
+
+}
+
+.formulario p{
+    width: 100%;
+    height: 40px;
+    color: var(--green);
+
+}
+
+.boton-registrar{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--black);
+    color: var(--yeloow);
+    box-shadow: 5px 5px 7px #160d0d;
+}
+
+.tengo-cuenta:hover{
+    color: crimson;
+}
+
+.boton-registrar:hover{
+    color: var(--white);
+    border: 2px solid var(--white);
+}
